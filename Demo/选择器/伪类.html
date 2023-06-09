@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>伪元素选择器</title>
+    <style>
+      /* .box {
+        border-bottom: 1px solid #ccc;
+      }
+      .box :first-child {
+        color: red;
+      } */
+      /* hover */
+      .box :nth-child(2n):hover {
+        background: cyan;
+      }
+      .box :nth-child(2n+1) {
+        width: 100px;
+        height: 100px;
+        background: yellow;
+      }
+      /* type结尾 */
+      .box2 li:first-of-type {
+        color: red;
+      }
+      .box2 li:last-of-type {
+        color: green;
+      }
+      .box2 p:nth-of-type(2) {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>以child结尾的伪元素选择器</h1>
+      <ul class="box">
+        <p>p111</p>
+        <li>li1</li>
+        <p>p222</p>
+        <li>li2</li>
+        <li>li3</li>
+        <p>p333</p>
+        <p>p444</p>
+        <li>li4</li>
+      </ul>
+    </div>
+    <div>
+      <h1>type结尾的伪元素选择器</h1>
+      <ul class="box2">
+        <p>p111</p>
+        <li>li1</li>
+        <p>p222</p>
+        <li>li2</li>
+        <li>li3</li>
+        <p>p333</p>
+        <p>p444</p>
+        <li>li4</li>
+      </ul>
+    </div>
+  </body>
+</html>

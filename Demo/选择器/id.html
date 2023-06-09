@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>id重复会怎样</title>
+    <style>
+      #center {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div id="center">我是id选择器11111</div>
+      <div id="center">我是id选择器22222</div>
+    </div>
+    <script type="text/javascript">
+      // 通过js获取，修改样式会改变吗
+      document.getElementById('center').style.backgroundColor = 'yellow'
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>常用属性</title>
+    <style scoped>
+      .box {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+      }
+      .font {
+        font-size: 20px;
+        color: red;
+        font-weight: 100;
+      }
+      .text {
+        border: 1px solid green;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+      }
+      .background {
+        background-color: pink;
+      }
+      .border1 {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: red;
+      }
+      .border2 {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+        border-style: dashed;
+        border-width: 1px;
+        border-color: green;
+      }
+      .border {
+        width: 100px;
+        height: 100px;
+        border: 1px solid coral;
+        border-radius: 5px;
+      }
+      /* display*/
+      .display {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border: 1px solid red;
+      }
+      .display1 {
+        display: block;
+      }
+      .display2 {
+        display: inline;
+      }
+      .display3 {
+        display: inline-block;
+      }
+      .display4 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="font">1、字体属性</div>
+    </div>
+    <div class="box">
+      <div class="text">2、文本属性</div>
+    </div>
+    <div class="box">
+      <div class="background">3、背景色</div>
+    </div>
+    <div class="box">
+      <div class="border1">边框实线</div>
+      <div class="border2">边框虚线</div>
+      <div class="border">复合边框</div>
+    </div>
+    <div class="box">
+      <div class="display display1">我是块元素</div>
+      <div class="display display2">我是行内元素</div><div class="display display3">我是行内块元素</div>
+      <div class="display display4">我是none</div>
+    </div>
+  </body>
+</html>

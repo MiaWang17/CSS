@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>兄弟元素选择器</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .offspring,.father,.box {
+        border-bottom: 1px solid #ccc;
+      }
+      .question~div+p {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 扩展 -->
+    <div class="box">
+      <h1>现场作答，只改变标签为444的样式</h1>
+      <p>000</p>
+      <div class="question">问题</div>
+      <p>111</p>
+      <p>222</p>
+      <p>333</p>
+      <div>
+        <span>孙级p标签</span>
+      </div>
+      <p>444</p>
+    </div>
+  </body>
+</html>
